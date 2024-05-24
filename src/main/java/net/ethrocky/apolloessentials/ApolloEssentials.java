@@ -1,5 +1,6 @@
 package net.ethrocky.apolloessentials;
 
+import net.ethrocky.apolloessentials.util.ModRegistries;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -13,7 +14,8 @@ public class ApolloEssentials implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
+		ModRegistries.registerModStuffs();
 
-		LOGGER.info("Hello Fabric world!");
+		LOGGER.info("Hello Mr. Stark");
 	}
 }
